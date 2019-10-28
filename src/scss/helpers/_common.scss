@@ -38,6 +38,10 @@ textarea {
 }
 .first-bg {
   background: url("../img/main-bg.png") no-repeat center center/cover;
-}
+  &--sales {
+    background: url("../img/main-bg--sales.png") no-repeat center center/cover;
+    position: relative;
 
+  }
+}
 

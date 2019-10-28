@@ -9,15 +9,14 @@
   &__title {
     @include font(40, bold, true);
     font-family: $accentFont;
-    max-width: 336px;
     letter-spacing: -1px;
     margin-bottom: 15px;
   }
   &__text {
     @include font(24);
-    max-width: 660px;
     letter-spacing: -.6px;
     hyphens: auto;
+    max-width: 80%;
   }
   &__button {
     margin-top: 35px;

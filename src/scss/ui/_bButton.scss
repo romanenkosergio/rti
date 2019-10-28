@@ -23,9 +23,7 @@
   }
   &--small {
     @include size(70px, 30px);
-    justify-content: center;
-    border-radius: 10px;
-    display: inline-flex;
+    border-radius: 8px;
     color: $light;
     font-family: $accentFont;
     line-height: 14px;
