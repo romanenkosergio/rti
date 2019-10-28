@@ -1,12 +1,22 @@
 .b-button {
-  @include flex(true, true);
+  @include flex(center, center);
   box-shadow: none;
   border: none;
   background: $main;
+  cursor: pointer;
+  @include trs;
   &__content {
     color: $light;
   }
   &--large {
-
+    @include size(220px, 65px);
+    border-radius: 50px;
+    span {
+      @include font(20, bold, true);
+      letter-spacing: -1px;
+    }
+  }
+  &:hover {
+    background: rgba($main, .8);
   }
 }

@@ -1,0 +1,24 @@
+.b-logo {
+  @include size(120px,210px);
+  background: $light;
+  padding: 27px 5px 5px;
+  text-align: center;
+  color: #000;
+  border-bottom-right-radius: 55px;
+  border-bottom-left-radius: 55px;
+  span {
+    @include font(16, bold, true);
+    letter-spacing: -1px;
+    line-height: 14px;
+    display: inline-block;
+  }
+  p {
+    @include font(88,bold,true);
+    line-height: 70px;
+    font-family: 'Myriad Pro Cond', sans-serif;
+    letter-spacing: -2px;
+  }
+  img {
+    margin-top: -15px;
+  }
+}
