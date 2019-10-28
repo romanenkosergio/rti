@@ -9,6 +9,12 @@
     background-color: #f7f7f7;
     z-index: -1;
   }
+  &--sales {
+      padding-bottom: 60px;
+      &:before {
+        display: none;
+      }
+  }
   &__items {
     @include flex(center, space-between)
   }
@@ -35,3 +41,4 @@
     max-width: 245px;
   }
 }
+

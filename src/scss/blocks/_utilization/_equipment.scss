@@ -3,8 +3,9 @@
   @include flex;
 
   &__image {
-    background: url("../img/utilization/bg.jpg ") no-repeat/cover;
-
+    width: 60%;
+    background: url("../img/utilization/bg.jpg ") no-repeat;
+    background-size: cover;
     &--normative {
       background: url("../img/utilization/bg--normative.png") no-repeat;
       background-size: cover;
