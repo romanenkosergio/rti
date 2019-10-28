@@ -1,0 +1,12 @@
+.b-next {
+  display: inline-flex;
+  align-items: center;
+  svg{
+    @include size(14px);
+    margin-right: 6px;
+  }
+  span{
+    @include font(10);
+    color: #626366;
+  }
+}

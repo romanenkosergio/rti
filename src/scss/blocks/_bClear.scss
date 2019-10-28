@@ -1,0 +1,24 @@
+.b-clear {
+  background: url("../img/clear-bg.png") no-repeat center center/100%;
+  padding-top: 130px;
+  margin-top: 250px;
+  position: relative;
+  color: #000;
+  height: 930px;
+  //&::before {
+  //  @include pseudo;
+  //  background: url("../img/clear-line.png") no-repeat center center/cover;
+  //  width: 100%;
+  //  height: 255px;
+  //  top: -125px;
+  //  z-index: 0;
+  //}
+  &__title {
+    @include font(50, bold);
+    font-family: $accentFont;
+    line-height: 61px;
+    text-align: center;
+    max-width: 750px;
+    @include mx--auto;
+  }
+}

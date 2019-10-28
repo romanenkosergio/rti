@@ -1,0 +1,37 @@
+.b-scope {
+  padding-top: 120px;
+  padding-left: 31px;
+
+  &__title {
+    @include font(36, bold);
+    font-family: $accentFont;
+    margin-bottom: 31px;
+  }
+
+  &__cards {
+    @include flex(false, space-between);
+    max-width: 1000px;
+  }
+
+  &__card {
+    width: 315px;
+  }
+
+  &__img {
+    margin-bottom: 13px;
+  }
+
+  &__name {
+    @include font(18, bold);
+    font-family: $accentFont;
+    letter-spacing: -.9px;
+    color: #75b53e;
+    margin-bottom: 12px;
+  }
+  &__text {
+    @include font(10);
+    color: #626366;
+    line-height: 14px;
+    margin-bottom: 20px;
+  }
+}
