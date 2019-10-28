@@ -1,0 +1,38 @@
+doctype html
+head
+    meta(charset='utf-8')
+    title Дмитровский завод РТИ
+    meta(name='description' content='')
+    meta(http-equiv='X-UA-Compatible' content='IE=edge')
+    meta(name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1')
+    // Include FontAwesome 5
+    link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css')
+    // Main Style
+    link(rel='stylesheet' href='css/main.min.css')
+    // Sharing
+
+    // Fav
+
+    // Global site tag (gtag.js) - Google Analytics
+    //Yandex Map
+    script(type="text/javascript" src='https://api-maps.yandex.ru/2.1/?apikey=0a7ad2dd-daec-4dac-84d8-e01e38600600&lang=ru_RU')
+    script.
+      ymaps.ready(init);
+      function init() {
+        var center = [56.57633, 37.513898]
+        var myMap = new ymaps.Map("map", {
+          center: center,
+          zoom: 10,
+          controls: []
+        });
+        var placemark = new ymaps.Placemark([56.366939, 37.573914], {
+          iconContent: '1'
+        });
+        var placemark1 = new ymaps.Placemark([56.332935, 37.511841], {
+          iconContent: '2'
+        });
+
+        myMap.geoObjects.add(placemark);
+        myMap.geoObjects.add(placemark1);
+        myMap.behaviors.disable('scrollZoom');
+      }
