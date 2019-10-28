@@ -1,5 +1,6 @@
 .b-footer {
-  margin-top: 46px;
+  padding-top: 46px;
+  background-color: #f7f7f7;
   &__container {
     @include flex(false, space-between);
     max-width: 1215px;
