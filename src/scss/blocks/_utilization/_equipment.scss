@@ -1,6 +1,4 @@
 .b-equipment {
-    padding-top: 38px;
-    padding-bottom: 33px;
     position: relative;
     display: flex;
 }
@@ -9,21 +7,19 @@
     background-image: url("../img/utilization/bg.jpg ");
     background-repeat: no-repeat;
     background-size: cover;
+
 }
 
 .b-equipment__image {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 53%;
-    max-width: 790px;
-    height: 100%;
+    width: 52%;
+    min-height: 527px;
 }
 
 .b-equipment__content {
-    max-width: 500px;
+    padding-top: 38px;
+    padding-bottom: 33px;
+    max-width: 540px;
     padding-left: 80px;
-    margin-left: auto;
 }
 
 .b-equipment__descr {
