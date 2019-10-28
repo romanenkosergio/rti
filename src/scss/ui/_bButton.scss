@@ -1,5 +1,5 @@
 .b-button {
-  @include flex(true, true);
+  @include flex(center, center);
   box-shadow: none;
   border: none;
   background: $main;
@@ -21,13 +21,11 @@
 
   }
   &--small {
-    @iclude size(70px, 30px);
-    min-width: 100%;
-    border-radius: 10px;
-    display: inline-flex;
+    @include size(70px, 30px);
+    border-radius: 8px;
     color: $light;
     font-family: $accentFont;
-    line-height: 14x
+    line-height: 14px;
      @include font(10, bold);
   }
 }

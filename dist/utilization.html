@@ -12,6 +12,37 @@
   <!-- Sharing-->
   <!-- Fav-->
   <!-- Global site tag (gtag.js) - Google Analytics-->
+  <!--Yandex Map-->
+  <script type="text/javascript" src="https://api-maps.yandex.ru/2.1/?apikey=0a7ad2dd-daec-4dac-84d8-e01e38600600&amp;lang=ru_RU"></script>
+  <script>
+    ymaps.ready(init);
+    function init() {
+      var center = [56.57633, 37.513898]
+      var myMap = new ymaps.Map("map", {
+        center: center,
+        zoom: 10,
+        controls: []
+      });
+      var placemark = new ymaps.Placemark([56.366939, 37.573914], {
+        iconContent: '1'
+      });
+      var placemark1 = new ymaps.Placemark([56.332935, 37.511841], {
+        iconContent: '2'
+      });
+      var placemark2 = new ymaps.Placemark([56.723645, 37.142211], {
+        iconContent: '3'
+      });
+      var placemark3 = new ymaps.Placemark([56.747561, 37.133309], {
+        iconContent: '4'
+      });
+    
+      myMap.geoObjects.add(placemark);
+      myMap.geoObjects.add(placemark1);
+      myMap.geoObjects.add(placemark2);
+      myMap.geoObjects.add(placemark3);
+      myMap.behaviors.disable('scrollZoom');
+    }
+  </script>
 </head>
 <body>
   <!--.first-bg
