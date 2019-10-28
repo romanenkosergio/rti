@@ -9,6 +9,7 @@
     color: $light;
   }
   &--large {
+    box-shadow: 0 0 12px 0 rgba($main,.3);
     @include size(220px, 65px);
     border-radius: 50px;
     span {

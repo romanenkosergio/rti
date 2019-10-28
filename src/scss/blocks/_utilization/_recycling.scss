@@ -2,6 +2,10 @@
   padding-top: 70px;
   padding-bottom: 82px;
   background-color: #f7f7f7;
+
+  &--normative {
+    background: $light;
+  }
 }
 
 
@@ -10,9 +14,11 @@
   justify-content: space-between;
   align-items: flex-end;
 }
+
 .b-recycling__card {
   width: 33.33%;
   margin-right: 50px;
+
   &:last-child {
     margin-right: 0;
   }
@@ -47,30 +53,30 @@
 }
 
 .b-recycling__title-wrap {
-    display: flex;
-    align-items: center;
-    position: relative;
+  display: flex;
+  align-items: center;
+  position: relative;
 }
 
 .b-recycling__icon {
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .b-recycling__icon--2 {
-    top: 13px;
-    left: 15px;
+  top: 13px;
+  left: 15px;
 }
 
 .b-recycling__icon--3 {
-    top: 17px;
-    left: 4px;
+  top: 17px;
+  left: 4px;
 }
 
 .b-recycling__image--3 {
-    margin-left: 37px;
+  margin-left: 37px;
 }
 
 
