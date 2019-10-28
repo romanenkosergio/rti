@@ -171,6 +171,20 @@
   }
 }
 
+//Fonts
+@mixin fontsPath($name, $directory, $weight:400) {
+  $fontPath: '../fonts/';
+  @font-face {
+    font-family: '#{$name}';
+    src: url('#{$fontPath}#{$directory}/#{$directory}.eot');
+    src: url('#{$fontPath}#{$directory}/#{$directory}.eot?#iefix') format('embedded-opentype'),
+    url('#{$fontPath}#{$directory}/#{$directory}.woff') format('woff'),
+    url('#{$fontPath}#{$directory}/#{$directory}.ttf') format('truetype'),
+    url('#{$fontPath}#{$directory}/#{$directory}.svg') format('svg');
+    font-weight: $weight;
+
+  }
+}
 /** EXTENDS **/
 
 %circle {
