@@ -1,0 +1,76 @@
+.b-recycling {
+  padding-top: 70px;
+  padding-bottom: 82px;
+  background-color: #f7f7f7;
+}
+
+
+.b-recycling__offers {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.b-recycling__card {
+  width: 33.33%;
+  margin-right: 50px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.b-recycling__image-wrap {
+  margin-bottom: 14px;
+}
+
+.b-recycling__card-title {
+  font-family: $mainFont;
+  font-size: 18px;
+  line-height: 21px;
+  color: $main;
+  max-width: 300px;
+  margin-bottom: 9px;
+  padding-left: 50px;
+}
+
+.b-recycling__card-descr {
+  font-family: $mainFont;
+  font-size: 10px;
+  line-height: 14px;
+  color: $text;
+  max-width: 300px;
+  margin-bottom: 20px;
+  padding-left: 50px;
+}
+
+.b-recycling__card .b-button {
+  margin-left: 50px;
+}
+
+.b-recycling__title-wrap {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.b-recycling__icon {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.b-recycling__icon--2 {
+    top: 13px;
+    left: 15px;
+}
+
+.b-recycling__icon--3 {
+    top: 17px;
+    left: 4px;
+}
+
+.b-recycling__image--3 {
+    margin-left: 37px;
+}
+
+
