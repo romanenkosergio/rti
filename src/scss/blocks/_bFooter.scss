@@ -1,0 +1,33 @@
+.b-footer {
+  margin-top: 46px;
+  &__container {
+    @include flex(false, space-between);
+    max-width: 1215px;
+    @include mx--auto;
+  }
+  &__text {
+    @include font(24, 300);
+    font-family: $accentFont;
+    margin-bottom: 27px;
+    max-width: 400px;
+    a {
+      display: inline-block;
+      @include trs;
+      margin-right: 5px;
+      &:hover {
+        color: $main;
+      }
+    }
+    span {
+      display: block;
+    }
+  }
+  &__social {
+    @include size(29px);
+    @include mr(15);
+    display: inline-block;
+    svg {
+      @include size(29px);
+    }
+  }
+}

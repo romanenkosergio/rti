@@ -1,0 +1,35 @@
+.b-points {
+  margin-top: 150px;
+  &__title {
+    margin-left: 40px;
+    @include font(36, bold);
+    color: $dark;
+    margin-bottom: 15px;
+  }
+  &__map {
+    position: relative;
+    height: 701px;
+  }
+  &__info {
+    position: absolute;
+    top: 0;
+    right: 10%;
+    width: 320px;
+    height: 100%;
+    padding-top: 35px;
+    padding-left: 27px;
+    background: #f7f7f7;
+  }
+  &__item {
+    @include mb(12);
+  }
+  &__name {
+    @include font(18,bold);
+    color: $main;
+  }
+  &__text {
+    margin-left: 20px;
+    @include font(14);
+    color: #626366;
+  }
+}
