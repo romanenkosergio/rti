@@ -27,6 +27,7 @@
     color: $light;
     font-family: $accentFont;
     line-height: 14px;
+    justify-content: center;
     @include font(10, bold);
   }
 }

@@ -1,10 +1,14 @@
 body
-    .first-bg
+    .first-bg.first-bg--utilization
         include ../blocks/_header
-        include ../blocks/_main
+        include ../blocks/_utilization/_main
     main
         include ../blocks/_utilization/_recycling
         include ../blocks/_utilization/_equipment
         include ../blocks/_utilization/_order-track
-    //include ../blocks/_footer
+        include ../blocks/_utilization/_points
+        include ../blocks/_utilization/_help
+        include ../blocks/_utilization/_certificates
+        include ../blocks/_utilization/_cards
+    include ../blocks/_footer
     script(src='js/scripts.min.js')
