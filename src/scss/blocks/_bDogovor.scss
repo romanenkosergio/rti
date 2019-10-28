@@ -1,0 +1,36 @@
+.b-dogovor {
+  padding-top: 42px;
+  &__title {
+    @include font(36, bold);
+    font-family: $accentFont;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  &__items {
+    @include flex(center, center, true);
+    margin-bottom: 23px;
+  }
+  &__item {
+    flex-basis: 50%;
+    border: 1px solid $main;
+    height: 120px;
+    @include flex;
+    padding: 20px 6px 0 10px;
+  }
+  &__number {
+    @include font(49, bold);
+    color: $main;
+    font-family: $accentFont;
+    margin-right: 25px;
+    display: inline-block;
+  }
+  &__text {
+    margin-top: 13px;
+    @include font(21);
+    line-height: normal;
+  }
+  &__icon {
+    text-align: center;
+    @include mx--auto;
+  }
+}
