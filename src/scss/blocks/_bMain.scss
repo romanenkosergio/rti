@@ -1,0 +1,25 @@
+.b-main {
+  padding-bottom: 150px;
+  margin-top: 58px;
+  color: $light;
+  &__container {
+    max-width: 1170px;
+    @include mx--auto;
+  }
+  &__title {
+    @include font(40, bold, true);
+    font-family: $accentFont;
+    max-width: 336px;
+    letter-spacing: -1px;
+    margin-bottom: 15px;
+  }
+  &__text {
+    @include font(24);
+    max-width: 660px;
+    letter-spacing: -.6px;
+    hyphens: auto;
+  }
+  &__button {
+    margin-top: 35px;
+  }
+}

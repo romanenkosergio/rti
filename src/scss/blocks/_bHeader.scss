@@ -1,6 +1,25 @@
 .b-header {
+  color: $light;
   &__container {
     max-width: 1170px;
     @include mx--auto;
+    @include flex(false, space-between);
+  }
+  &__contacts {
+    padding-top: 27px;
+    & a {
+      @include trs;
+      &:hover {
+        color: $main;
+      }
+    }
+  }
+  &__phone {
+    @include font(24);
+    letter-spacing: -.24px;
+    display: block;
+  }
+  &__call {
+    @include font(14);
   }
 }

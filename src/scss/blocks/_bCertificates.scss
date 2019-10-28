@@ -1,0 +1,40 @@
+.b-certificates {
+  background-color: #f7f7f7;
+  padding-top: 125px;
+  padding-bottom: 191px;
+  &__title {
+    margin-left: 40px;
+    @include font(36, bold);
+    font-family: $accentFont;
+    margin-bottom: 95px;
+  }
+  &__cards {
+    @include flex(center, space-between);
+
+  }
+  &__card {
+    max-width: 251px;
+    text-align: center;
+  }
+  &__icon {
+    @include size(113px);
+    @extend %circle;
+    background: $bg;
+    @include flex(center, center);
+    @include mx--auto;
+    margin-bottom: 25px;
+  }
+  &__name {
+    @include font(18, bold);
+    letter-spacing: -.18px;
+    color: #231f20;
+    margin-bottom: 10px;
+  }
+  &__text {
+    @include font(10);
+    color: #626366;
+    line-height: 14px;
+    letter-spacing: -.18px;
+    margin-bottom: 34px;
+  }
+}

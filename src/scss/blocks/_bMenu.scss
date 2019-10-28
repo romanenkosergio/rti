@@ -1,0 +1,13 @@
+.b-menu {
+  padding-top: 27px;
+  @include flex(false, space-between);
+  width: 561px;
+  @include font(14, bold, true);
+  &__link {
+    @include trs;
+    display: inline-table;
+    &:hover {
+      color: $main;
+    }
+  }
+}
