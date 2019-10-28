@@ -3,11 +3,13 @@
   @include flex;
 
   &__image {
-    background-image: url("../img/utilization/bg.jpg ") no-repeat/cover;
-
+    width: 60%;
+    background: url("../img/utilization/bg.jpg ") no-repeat;
+    background-size: cover;
     &--normative {
-      background-image: url("../img/utilization/bg--normative.png");
-      width: 70%;
+      background: url("../img/utilization/bg--normative.png") no-repeat;
+      background-size: cover;
+      width: 60%;
     }
   }
 
@@ -18,7 +20,7 @@
   &__content {
     max-width: 500px;
     padding-left: 80px;
-    width: 30%;
+    width: 40%;
     min-height: 527px;
     padding-top: 38px;
     padding-bottom: 33px;

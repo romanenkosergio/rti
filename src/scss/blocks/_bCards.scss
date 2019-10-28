@@ -9,10 +9,11 @@
     background-color: #f7f7f7;
     z-index: -1;
   }
-  &--transparent {
-    &::before {
-      display: none !important;
-    }
+  &--sales {
+      padding-bottom: 60px;
+      &:before {
+        display: none;
+      }
   }
   &__items {
     @include flex(center, space-between)
