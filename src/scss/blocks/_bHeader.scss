@@ -1,0 +1,6 @@
+.b-header {
+  &__container {
+    max-width: 1170px;
+    @include mx--auto;
+  }
+}
