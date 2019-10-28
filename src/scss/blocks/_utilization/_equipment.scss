@@ -1,40 +1,46 @@
 .b-equipment {
-    padding-top: 38px;
-    padding-bottom: 33px;
-    position: relative;
-    display: flex;
+  padding-top: 38px;
+  padding-bottom: 33px;
+  position: relative;
+  display: flex;
 }
 
 .b-equipment__image {
-    background-image: url("../img/utilization/bg.jpg ");
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-image: url("../img/utilization/bg.jpg ");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &--normative {
+    background-image: url("../img/utilization/bg--normative.png ");
+    width: 70% !important;
+  }
+
 }
 
 .b-equipment__image {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 53%;
-    max-width: 790px;
-    height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 53%;
+  max-width: 790px;
+  height: 100%;
 }
 
 .b-equipment__content {
-    max-width: 500px;
-    padding-left: 80px;
-    margin-left: auto;
+  max-width: 500px;
+  padding-left: 80px;
+  margin-left: auto;
 }
 
 .b-equipment__descr {
-    font-size: 18px;
-    font-family: $mainFont;
-    line-height: 23px;
-    color: $dark;
-    margin-bottom: 20px;
+  font-size: 18px;
+  font-family: $mainFont;
+  line-height: 23px;
+  color: $dark;
+  margin-bottom: 20px;
 }
 
 .b-equipment__button {
-    margin-top: 84px;
+  margin-top: 84px;
 }
 
