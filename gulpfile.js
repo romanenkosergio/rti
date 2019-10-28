@@ -12,7 +12,7 @@ const gulp = require('gulp'),
   babel = require('gulp-babel'),
   imagemin     = require('gulp-imagemin'),
   imgCompress  = require('imagemin-jpeg-recompress'),
-sourcemaps = require('gulp-sourcemaps'),
+    sourcemaps = require('gulp-sourcemaps'),
   notify = require("gulp-notify");
 
 gulp.task('browser-sync', function() {
@@ -27,7 +27,7 @@ gulp.task('browser-sync', function() {
   })
 });
 gulp.task('pug', () => {
-  return gulp.src('src/pug/index.pug')
+  return gulp.src('src/pug/*.pug')
     .pipe(
       pug({
         pretty: true

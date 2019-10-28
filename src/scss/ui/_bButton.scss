@@ -1,5 +1,5 @@
 .b-button {
-  @include flex(center, center);
+  @include flex(true, true);
   box-shadow: none;
   border: none;
   background: $main;
@@ -18,5 +18,16 @@
   }
   &:hover {
     background: rgba($main, .8);
+
+  }
+  &--small {
+    @iclude size(70px, 30px);
+    min-width: 100%;
+    border-radius: 10px;
+    display: inline-flex;
+    color: $light;
+    font-family: $accentFont;
+    line-height: 14x
+     @include font(10, bold);
   }
 }
