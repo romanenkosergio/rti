@@ -25,6 +25,15 @@ $(document).ready(function () {
       }
     }
   });
-const c = 6;
-  console.log(c);
+
+  /** Burger **/
+  $('.js-burger').on('click', function () {
+    $(this).toggleClass('b-burger--active');
+    $('.b-menu').toggleClass('b-menu--active');
+  });
+  /** Map **/
+  $('.js-points-burger').on('click', function () {
+    $(this).toggleClass('b-points__burger--active');
+    $('.b-points__info').toggleClass('b-points__info--active');
+  })
 });

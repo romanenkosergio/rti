@@ -5,6 +5,14 @@
     @include flex(false, space-between);
     max-width: 1215px;
     @include mx--auto;
+    @include media(lg) {
+      max-width: 100%;
+      padding: 0 2%;
+    }
+    @include media(md) {
+      flex-wrap: wrap;
+    }
+
   }
   &__text {
     @include font(24, 300);
@@ -18,12 +26,33 @@
       &:hover {
         color: $main;
       }
+      @include media(md) {
+        display: block;
+      }
     }
     span {
       display: block;
     }
+    @include media(lg) {
+      @include font(21);
+      max-width: 300px;
+    }
+    @include media(md) {
+      @include font(18);
+      margin-bottom: 10%;
+      max-width: 230px;
+    }
+    @include media(sm) {
+      margin-bottom: 15px;
+      width: 100%;
+      @include font(16);
+      &:nth-child(2) {
+        max-width: none;
+      }
+    }
   }
   &__social {
+    margin-top: -27px;
     @include size(29px);
     @include mr(15);
     display: inline-block;
@@ -38,5 +67,11 @@
         fill: $main;
       }
     }
+    @include media(sm) {
+      margin-top: -10px;
+    }
+  }
+  @include media(lg) {
+    padding-top: 2%;
   }
 }

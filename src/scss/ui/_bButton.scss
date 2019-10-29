@@ -16,11 +16,17 @@
     span {
       @include font(20, bold, true);
       letter-spacing: -1px;
+      @include media(sm) {
+        @include font(18);
+        letter-spacing: normal;
+      }
+      @include media(xs) {
+        @include font(16);
+      }
     }
-  }
-  &:hover {
-    background: rgba($main, .8);
-
+    @include media(xs) {
+      @include size(200px, 50px);
+    }
   }
   &--small {
     @include size(70px, 30px);
@@ -30,5 +36,9 @@
     line-height: 14px;
     justify-content: center;
     @include font(10, bold);
+  }
+  &:hover {
+    background: rgba($main, .8);
+
   }
 }

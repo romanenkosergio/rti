@@ -6,8 +6,33 @@
   &__link {
     @include trs;
     display: inline-table;
+    z-index: 1;
+    position: relative;
     &:hover {
       color: $main;
+    }
+    @include media(lg) {
+      display: table;
+      @include mx--auto;
+      color: $dark;
+      text-align: center;
+      @include font(18);
+      @include mb(20);
+      top: 20%;
+      border-bottom: 1px solid $main;
+    }
+  }
+  @include media(lg) {
+    width: 110%;
+    left: 1000%;
+    transition: left .5s;
+    padding-left: 10%;
+    height: 100%;
+    position: absolute;
+    display: block;
+    background: rgba($light, .9);
+    &--active {
+      left: -10%;
     }
   }
 }

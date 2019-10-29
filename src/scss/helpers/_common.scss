@@ -38,8 +38,15 @@ textarea {
 }
 .first-bg {
   background: url("../img/main-bg.png") no-repeat center center/cover;
+  position: relative;
+  @include media(lg) {
+    background-size: 190%;
+  }
+  @include media(sm) {
+    background: url("../img/main-bgMobile.jpg") no-repeat center center/cover;
+  }
   &--sales {
-    background: url("../img/main-bg--sales.png") no-repeat center center/cover;
+    background: url("../img/main-bg--sales.png") no-repeat center center;
     position: relative;
 
   }

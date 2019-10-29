@@ -4,6 +4,10 @@
     max-width: 1170px;
     @include mx--auto;
     @include flex(false, space-between);
+    @include media(lg) {
+      min-width: 100%;
+      padding: 0 2%;
+    }
   }
   &__contacts {
     padding-top: 27px;
@@ -12,6 +16,9 @@
       &:hover {
         color: $main;
       }
+    }
+    @include media(lg) {
+      display: none;
     }
   }
   &__phone {

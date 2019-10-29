@@ -7,6 +7,12 @@
     @include font(36, bold);
     font-family: $accentFont;
     margin-bottom: 13px;
+    @include media(md) {
+      @include font(30)
+    }
+    @include media(xs) {
+      @include font(25);
+    }
   }
   &__subtitle {
     @include font(18);
@@ -14,15 +20,44 @@
     @include mx--auto;
     color: #626366;
     line-height: 23px;
+    @include media(md) {
+      letter-spacing: normal;
+      br {
+        display: none;
+      }
+    }
+    @include media(sm) {
+      @include font(16);
+      line-height: normal;
+    }
+    @include media(xs) {
+      @include font(15);
+    }
   }
   &__cards {
     margin-top: 90px;
     max-width: 980px;
     @include flex(center, space-between);
+    @include mx--auto;
+    @include media(lg) {
+      margin-top: 5%;
+    }
+    @include media(sm) {
+      flex-wrap: wrap;
+      margin-top: 10%;
+    }
   }
   &__card {
     width: 200px;
     text-align: center;
+    @include media(md) {
+      width: 24%;
+    }
+    @include media(sm) {
+      width: 100%;
+      text-align: left;
+      margin-bottom: 8%;
+    }
   }
   &__icon {
     background: $bg;
@@ -31,6 +66,14 @@
     @include flex(center, center);
     @include mx--auto;
     margin-bottom: 50px;
+    @include media(md){
+      @include size(90px);
+      margin-bottom: 9%;
+    }
+    @include media(sm) {
+      margin: 0;
+      margin-bottom: 2%;
+    }
   }
   &__name {
     @include font(18, bold);
@@ -38,12 +81,23 @@
     margin-bottom: 10px;
     line-height: 20px;
     height: 45px;
+    @include media(md) {
+      @include font(16);
+      line-height: 18px;
+      margin-bottom: 2%;
+    }
+    @include media(sm) {
+      height: auto;
+    }
   }
   &__text {
-    @include font(10);
+    @include font(13);
     color: #626366;
     letter-spacing: -.18px;
     margin-bottom: 37px;
+    @include media(sm) {
+      margin-bottom: 5px;
+    }
   }
   &::before{
     @include pseudo;
@@ -52,5 +106,12 @@
     z-index: -1;
     width: 100%;
     height: 200px;
+  }
+  @include media(lg) {
+    padding-top: 5%;
+  }
+  @include media(sm) {
+    margin-top: 10%;
+    text-align: left;
   }
 }

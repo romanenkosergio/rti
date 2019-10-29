@@ -5,20 +5,54 @@
   &__container {
     max-width: 1170px;
     @include mx--auto;
+    @include media(lg) {
+      min-width: 100%;
+      padding: 0 2%;
+    }
   }
   &__title {
     @include font(40, bold, true);
     font-family: $accentFont;
     letter-spacing: -1px;
     margin-bottom: 15px;
+    @include media(md){
+      @include font(30);
+      br {
+        display: none;
+      }
+    }
+    @include media(sm) {
+      @include font(25);
+      margin-bottom: 10px;
+    }
+    @include media(xs) {
+      @include font(21);
+    }
   }
   &__text {
     @include font(24);
     letter-spacing: -.6px;
     hyphens: auto;
     max-width: 80%;
+    @include media(lg) {
+      hyphens: none;
+    }
+    @include media(md) {
+      max-width: 100%;
+      @include font(20);
+      letter-spacing: normal;
+    }
+    @include media(sm) {
+      @include font(18);
+    }
+    @include media(xs) {
+      @include font(15);
+    }
   }
   &__button {
     margin-top: 35px;
+    @include media(sm) {
+      margin-top: 15px;
+    }
   }
 }

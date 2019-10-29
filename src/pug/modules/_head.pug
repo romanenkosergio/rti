@@ -19,10 +19,11 @@ head
     script.
       ymaps.ready(init);
       function init() {
-        var center = [56.57633, 37.513898]
+        let width =  document.body.clientWidth;
+        var center = width > 1024 ? [56.57633, 37.513898] : [56.55633, 37.513898];
         var myMap = new ymaps.Map("map", {
           center: center,
-          zoom: 10,
+          zoom: width > 768 ? 10 : 9,
           controls: []
         });
         var placemark = new ymaps.Placemark([56.366939, 37.573914], {
