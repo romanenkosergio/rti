@@ -35,7 +35,6 @@
   color: $main;
   max-width: 300px;
   margin-bottom: 9px;
-  padding-left: 50px;
 }
 
 .b-recycling__card-descr {
@@ -45,38 +44,42 @@
   color: $text;
   max-width: 300px;
   margin-bottom: 20px;
-  padding-left: 50px;
 }
 
-.b-recycling__card .b-button {
-  margin-left: 50px;
-}
-
-.b-recycling__title-wrap {
+.b-recycling__card-content {
   display: flex;
-  align-items: center;
-  position: relative;
 }
 
-.b-recycling__icon {
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
+.b-recycling__icon--1 {
+  width: 22px;
+  height: 31px;
+  margin-top: 5px;
 }
 
 .b-recycling__icon--2 {
-  top: 13px;
-  left: 15px;
+  width: 30px;
+  height: 17px;
+  margin-top: 5px;
+
 }
 
 .b-recycling__icon--3 {
-  top: 17px;
-  left: 4px;
+  width: 40px;
+  height: 43px;
 }
 
-.b-recycling__image--3 {
-  margin-left: 37px;
+.b-recycling__wrap {
+  margin-left: 20px
 }
+
+
+
+
+
+
+
+
+
+
 
 
